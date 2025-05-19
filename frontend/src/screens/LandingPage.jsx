@@ -14,7 +14,7 @@ const LandingPage = () => {
         
         <div className=" flex gap-4 justify-center">
           <Link
-            to="/second"
+            to="/signup"
             className="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 cursor-pointer transition active:scale-95"
           >
             Get Started

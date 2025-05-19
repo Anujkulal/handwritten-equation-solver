@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const AuthPage = ({ mode }) => {
   const [formData, setFormData] = useState({
@@ -68,6 +69,22 @@ const AuthPage = ({ mode }) => {
         >
           {mode === 'signup' ? 'Create Account' : 'Login'}
         </button>
+
+        <div className="flex justify-center">
+          {
+            mode === "signup" ? (
+              <div>
+                <Link to="/signin" className='text-blue-800 hover:text-blue-600'>Already have an account?</Link>
+              </div>
+            ) : (
+              <div className="">
+                <Link to="/signup" className='text-blue-800 hover:text-blue-600'>Don't have an account?</Link>
+                <Link to="/second" className='text-blue-800 hover:text-black'>move</Link>
+              </div>
+            )
+          }
+
+        </div>
       </form>
     </div>
   );
