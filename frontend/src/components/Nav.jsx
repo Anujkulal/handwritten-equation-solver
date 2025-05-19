@@ -1,7 +1,7 @@
 import { Link, NavLink } from 'react-router-dom'
 
 const Nav = () => {
-    const styles = ({isActive}:any) => {
+    const styles = ({isActive}) => {
         console.log(isActive)
         return {
             fontWeight: isActive ? 'bold' : 'normal',

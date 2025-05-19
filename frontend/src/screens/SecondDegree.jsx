@@ -3,10 +3,10 @@ import EquationCanvas from '../components/EquationCanvas';
 import Nav from '../components/Nav';
 
 const SecondDegree = () => {
-  const [equationImages, setEquationImages] = useState<string[]>(['', '']);
-  const [solution, setSolution] = useState<{ x?: number; y?: number }>({});
+  const [equationImages, setEquationImages] = useState(['', '']);
+  const [solution, setSolution] = useState({});
 
-  const handleDraw = (index: number, dataUrl: string) => {
+  const handleDraw = (index, dataUrl) => {
     const updated = [...equationImages];
     updated[index] = dataUrl;
     setEquationImages(updated);

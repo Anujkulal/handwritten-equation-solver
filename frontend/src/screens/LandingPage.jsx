@@ -11,12 +11,21 @@ const LandingPage = () => {
         <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-8">
           Solve handwritten third-degree linear equations with ease. Just draw your equations, hit calculate, and get instant solutions.
         </p>
-        <Link
-          to="/second"
-          className="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition"
-        >
-          Get Started
-        </Link>
+        
+        <div className=" flex gap-4 justify-center">
+          <Link
+            to="/second"
+            className="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 cursor-pointer transition active:scale-95"
+          >
+            Get Started
+          </Link>
+          <Link
+            to="/signin"
+            className="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 cursor-pointer transition active:scale-95"
+          >
+            Sign In
+          </Link>
+        </div>
       </div>
 
       <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
