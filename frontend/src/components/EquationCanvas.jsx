@@ -111,12 +111,16 @@ const EquationCanvas = ({
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       />
-      <button
-        onClick={clearCanvas}
-        className="bg-red-600 text-white px-4 py-2 rounded-xl hover:bg-red-500 cursor-pointer transition active:scale-95"
-      >
-        Clear Canvas
-      </button>
+      <div className="flex justify-between">
+        <input type="file" name="" id="" className="p-2 rounded-xl bg-blue-300 transition active:scale-95" />
+        <button
+          onClick={clearCanvas}
+          className="bg-red-600 text-white px-4 py-2 rounded-xl hover:bg-red-500 cursor-pointer transition active:scale-95"
+        >
+          Clear Canvas
+        </button>
+
+      </div>
     </div>
   );
 };
